@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14171A">
+
+    <meta
+        name="description"
+        content="Ultra Tech - Accesorios tecnológicos, dispositivos y servicio técnico en Sibaté, Cundinamarca."
+    >
+
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ultra Tech | Tecnología y Servicio Técnico">
+    <meta property="og:description" content="Accesorios, dispositivos y servicio técnico para celulares, tablets y computadores en El Carmen, Sibaté.">
+    <meta property="og:image" content="assets/images/local-1.jpg">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ultra Tech | Tecnología y Servicio Técnico">
+    <meta name="twitter:description" content="Accesorios, dispositivos y servicio técnico para celulares, tablets y computadores en El Carmen, Sibaté.">
+    <meta name="twitter:image" content="assets/images/local-1.jpg">
+
+    <title>Ultra Tech | Tecnología y Servicio Técnico</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+    <!-- Datos del negocio para Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ElectronicsStore",
+        "name": "Ultra Tech",
+        "image": "assets/images/local-1.jpg",
+        "telephone": "+573223034108",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Carrera 8 # 7 - 36, El Carmen",
+            "addressLocality": "Sibaté",
+            "addressRegion": "Cundinamarca",
+            "addressCountry": "CO"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 4.4895985,
+            "longitude": -74.2611935
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "10:00",
+                "closes": "21:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "18:00"
+            }
+        ],
+        "sameAs": ["https://www.instagram.com/ultra_tech_co/"]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- =========================
+         SPRITE DE ICONOS
+    ========================== -->
+    <svg style="display:none" aria-hidden="true">
+        <symbol id="icon-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.6 4.6L3 17l2 2 6-6.1a4 4 0 0 0 4.6-5.6l-2.5 2.5-2-2 2.6-2.5Z"/></symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></symbol>
+        <symbol id="icon-headphones" viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></symbol>
+        <symbol id="icon-cable" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 4 4h4a4 4 0 0 1 4 4v4"/><circle cx="6" cy="3" r="1.6"/><circle cx="18" cy="21" r="1.6"/></symbol>
+        <symbol id="icon-gamepad" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="9" rx="4"/><line x1="7" y1="10.5" x2="7" y2="14.5"/><line x1="5" y1="12.5" x2="9" y2="12.5"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="14" r="1"/></symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/></symbol>
+        <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+        <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></symbol>
+        <symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12.6 2H4v8.6L14.4 21 21 14.4 12.6 2Z"/><circle cx="8" cy="7" r="1.4"/></symbol>
+        <symbol id="icon-box" viewBox="0 0 24 24"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M3 8v9l9 5 9-5V8"/><line x1="12" y1="13" x2="12" y2="22"/></symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12Z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/><path d="M8.3 8.6c.2-.6.5-.6.8-.6h.6c.2 0 .4 0 .6.5.2.5.7 1.7.7 1.9.1.1.1.3 0 .4-.6 1.2-1.2 1.1-.7 1.9.7 1.1 1.3 1.6 2.3 2.1.2.1.3.1.5-.1.2-.2.7-.8.9-1.1.2-.2.4-.2.6-.1.2.1 1.5.7 1.8.9.2.1.4.2.4.3 0 .2 0 1-.4 1.5-.4.5-1.4 1-2.4.9-1.2-.1-3.1-.9-4.5-2.6-1.2-1.4-1.9-2.8-2.1-3.9-.2-.9.1-1.6.4-2Z" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="icon-screw" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="6" x2="12" y2="18"/><line x1="6" y1="12" x2="18" y2="12"/></symbol>
+        <symbol id="icon-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="17" height="10" rx="2"/><line x1="21" y1="10" x2="21" y2="14"/><rect x="4.5" y="9.5" width="7" height="5" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="ill-clock" viewBox="0 0 64 64"><circle cx="32" cy="34" r="24"/><path d="M32 20v14l10 6"/><line x1="32" y1="4" x2="32" y2="10"/><line x1="16" y1="8" x2="19" y2="13"/><line x1="48" y1="8" x2="45" y2="13"/></symbol>
+        <symbol id="ill-repair" viewBox="0 0 64 64"><rect x="18" y="6" width="24" height="44" rx="5"/><line x1="26" y1="43" x2="34" y2="43"/><path d="M48 38a6 6 0 0 0-8.4 8.4L28 58l4 4 11.6-11.6A6 6 0 0 0 52 42l-4 4-4-4 4-4Z"/><circle cx="12" cy="16" r="2" fill="currentColor" stroke="none"/><circle cx="52" cy="12" r="2" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="ill-accessories" viewBox="0 0 64 64"><path d="M10 34v-4a22 22 0 0 1 44 0v4"/><rect x="8" y="34" width="10" height="16" rx="3"/><rect x="46" y="34" width="10" height="16" rx="3"/><path d="M32 50v6a4 4 0 0 0 4 4h5"/><circle cx="45" cy="60" r="2" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="ill-store" viewBox="0 0 64 64"><path d="M8 24 12 10h40l4 14"/><path d="M8 24a6 6 0 0 0 12 0 6 6 0 0 0 12 0 6 6 0 0 0 12 0 6 6 0 0 0 12 0"/><rect x="14" y="30" width="36" height="26" rx="2"/><rect x="26" y="38" width="12" height="18"/></symbol>
+    </svg>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                <img src="assets/images/logo.png" alt="Ultra Tech">
+                <span>Ultra Tech</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links">
+
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+                <li class="nav-cta-mobile">
+                    <a href="https://wa.me/573223034108?text=Hola%20Ultra%20Tech%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios." target="_blank" class="btn btn-primary btn-small">
+                        <svg width="16" height="16"><use href="#icon-whatsapp"/></svg> Escríbenos
+                    </a>
+                </li>
+
+            </ul>
+
+            <a
+                href="https://wa.me/573223034108?text=Hola%20Ultra%20Tech%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios."
+                target="_blank"
+                class="btn btn-primary btn-small nav-cta"
+            >
+                <svg width="16" height="16"><use href="#icon-whatsapp"/></svg> Escríbenos
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section id="inicio" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <div class="sign-badge">ULTRA T<em>E</em>CH</div>
+
+                    <h1>
+                        Tu tecnología, en buenas manos.
+                    </h1>
+
+                    <p>
+                        Accesorios, dispositivos y servicio técnico
+                        para celulares, tablets y computadores, aquí en Sibaté.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="https://wa.me/573223034108?text=Hola%20Ultra%20Tech%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios."
+                            target="_blank"
+                            class="btn btn-primary"
+                        >
+                            <svg width="18" height="18"><use href="#icon-whatsapp"/></svg>
+                            Contactar por WhatsApp
+                        </a>
+
+                        <a href="#servicios" class="btn btn-secondary">
+                            Ver servicios
+                        </a>
+
+                    </div>
+
+                    <div class="hero-meta">
+                        <span><svg width="14" height="14"><use href="#icon-clock"/></svg> Lun–Sáb 10am–9pm</span>
+                        <span><svg width="14" height="14"><use href="#icon-pin"/></svg> El Carmen, Sibaté</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="device-mock">
+
+                        <div class="device-glow"></div>
+
+                        <div class="device-frame">
+                            <div class="device-cam"></div>
+
+                            <div class="device-screen">
+
+                                <div class="device-topbar">
+                                    <span>ULTRA TECH</span>
+                                    <span class="device-dots"><i></i><i></i><i></i></span>
+                                </div>
+
+                                <div class="device-ring">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle class="ring-track" cx="50" cy="50" r="42"></circle>
+                                        <circle class="ring-value" cx="50" cy="50" r="42"></circle>
+                                    </svg>
+                                    <div class="ring-text">
+                                        <strong>92%</strong>
+                                        <span>Diagnóstico</span>
+                                    </div>
+                                </div>
+
+                                <div class="device-status-line">
+                                    <span class="dot"></span> Reparación en curso
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="chip chip-1"><svg width="20" height="20"><use href="#icon-wrench"/></svg></div>
+                        <div class="chip chip-2"><svg width="18" height="18"><use href="#icon-screw"/></svg></div>
+                        <div class="chip chip-3"><svg width="18" height="18"><use href="#icon-battery"/></svg></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CINTA ANIMADA
+        ========================== -->
+
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>Servicio técnico de celulares</span>
+                <span class="marquee-dot">●</span>
+                <span>Todas las marcas</span>
+                <span class="marquee-dot">●</span>
+                <span>Garantía incluida</span>
+                <span class="marquee-dot">●</span>
+                <span>Mismo día</span>
+                <span class="marquee-dot">●</span>
+                <span>Accesorios originales</span>
+                <span class="marquee-dot">●</span>
+                <span>Servicio técnico de celulares</span>
+                <span class="marquee-dot">●</span>
+                <span>Todas las marcas</span>
+                <span class="marquee-dot">●</span>
+                <span>Garantía incluida</span>
+                <span class="marquee-dot">●</span>
+                <span>Mismo día</span>
+                <span class="marquee-dot">●</span>
+                <span>Accesorios originales</span>
+                <span class="marquee-dot">●</span>
+            </div>
+        </div>
+
+
+        <!-- =========================
+             CIFRAS
+        ========================== -->
+
+        <section class="stats-section">
+            <div class="container stats-grid">
+
+                <div class="stat" data-reveal>
+                    <svg class="stat-illus" viewBox="0 0 64 64"><use href="#ill-clock"/></svg>
+                    <div class="stat-number" data-count="7">0</div>
+                    <p>Días de atención a la semana</p>
+                </div>
+
+                <div class="stat" data-reveal>
+                    <svg class="stat-illus" viewBox="0 0 64 64"><use href="#ill-repair"/></svg>
+                    <div class="stat-number" data-count="3">0</div>
+                    <p>Servicios: técnico, dispositivos y accesorios</p>
+                </div>
+
+                <div class="stat" data-reveal>
+                    <svg class="stat-illus" viewBox="0 0 64 64"><use href="#ill-accessories"/></svg>
+                    <div class="stat-number" data-count="6">0</div>
+                    <p>Categorías de producto en el local</p>
+                </div>
+
+                <div class="stat" data-reveal>
+                    <svg class="stat-illus" viewBox="0 0 64 64"><use href="#ill-store"/></svg>
+                    <div class="stat-number" data-count="1">0</div>
+                    <p>Local en el corazón de Sibaté</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SERVICIOS
+        ========================== -->
+
+        <section id="servicios" class="services section">
+
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Lo que reparamos y ofrecemos</h2>
+                    <p>Trae tu equipo, te damos un diagnóstico claro y un tiempo real de entrega — sin letra pequeña.</p>
+                </div>
+
+
+                <div class="service-list">
+
+                    <article class="service-row" data-reveal>
+                        <div class="service-icon"><svg width="22" height="22"><use href="#icon-wrench"/></svg></div>
+                        <div class="service-body">
+                            <h3>Servicio técnico</h3>
+                            <p>Reparación y mantenimiento de celulares, tablets y computadores.</p>
+                        </div>
+                        <span class="service-tag">Garantía incluida</span>
+                    </article>
+
+                    <article class="service-row" data-reveal>
+                        <div class="service-icon"><svg width="22" height="22"><use href="#icon-phone"/></svg></div>
+                        <div class="service-body">
+                            <h3>Dispositivos</h3>
+                            <p>Celulares, tablets, computadores y otros equipos tecnológicos.</p>
+                        </div>
+                        <span class="service-tag">Varias marcas</span>
+                    </article>
+
+                    <article class="service-row" data-reveal>
+                        <div class="service-icon"><svg width="22" height="22"><use href="#icon-headphones"/></svg></div>
+                        <div class="service-body">
+                            <h3>Accesorios</h3>
+                            <p>Cargadores, audífonos, cables, forros, hidrogel, parlantes y más.</p>
+                        </div>
+                        <span class="service-tag">Stock disponible</span>
+                    </article>
+
+                </div>
+
+
+                <div class="section-cta">
+
+                    <a
+                        href="https://wa.me/573223034108?text=Hola%20Ultra%20Tech%2C%20quisiera%20consultar%20por%20una%20reparaci%C3%B3n."
+                        target="_blank"
+                        class="btn btn-primary"
+                    >
+                        <svg width="18" height="18"><use href="#icon-wrench"/></svg>
+                        Consultar una reparación
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRODUCTOS
+        ========================== -->
+
+        <section id="productos" class="products section">
+
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Encuentra lo que necesitas</h2>
+                    <p>Un vistazo rápido a nuestro inventario. Pregúntanos disponibilidad por WhatsApp.</p>
+                </div>
+
+
+                <div class="products-grid">
+
+                    <article class="product-card" data-reveal>
+                        <svg class="product-icon" width="26" height="26"><use href="#icon-phone"/></svg>
+                        <h3>Celulares</h3>
+                        <p>Diferentes marcas y referencias.</p>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <svg class="product-icon" width="26" height="26"><use href="#icon-cable"/></svg>
+                        <h3>Cargadores y cables</h3>
+                        <p>Para mantener tus dispositivos siempre conectados.</p>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <svg class="product-icon" width="26" height="26"><use href="#icon-gamepad"/></svg>
+                        <h3>Gaming</h3>
+                        <p>Accesorios, PlayStation, Xbox y más.</p>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <svg class="product-icon" width="26" height="26"><use href="#icon-headphones"/></svg>
+                        <h3>Audio</h3>
+                        <p>Audífonos, parlantes y diferentes opciones.</p>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <svg class="product-icon" width="26" height="26"><use href="#icon-shield"/></svg>
+                        <h3>Protección</h3>
+                        <p>Vidrios templados, hidrogel y forros.</p>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <svg class="product-icon" width="26" height="26"><use href="#icon-monitor"/></svg>
+                        <h3>Computación</h3>
+                        <p>Mouse, memorias, soportes y accesorios.</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BENEFICIOS
+        ========================== -->
+
+        <section class="benefits section">
+
+            <div class="container">
+
+                <div class="benefits-strip">
+
+                    <div class="benefit">
+                        <svg width="20" height="20"><use href="#icon-bolt"/></svg>
+                        <div>
+                            <h3>Servicio rápido</h3>
+                            <p>Diagnóstico y reparación eficientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <svg width="20" height="20"><use href="#icon-shield"/></svg>
+                        <div>
+                            <h3>Garantía</h3>
+                            <p>En productos y servicios.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <svg width="20" height="20"><use href="#icon-tag"/></svg>
+                        <div>
+                            <h3>Buenos precios</h3>
+                            <p>Opciones para todo presupuesto.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <svg width="20" height="20"><use href="#icon-box"/></svg>
+                        <div>
+                            <h3>Mercancía disponible</h3>
+                            <p>Gran variedad a la mano.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALERÍA
+        ========================== -->
+
+        <section class="gallery section">
+
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Así es Ultra Tech</h2>
+                    <p>Nuestro local en El Carmen, Sibaté. Pronto sumamos más fotos del espacio y los productos.</p>
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <figure class="polaroid featured" data-reveal data-reveal-fade>
+                        <div class="polaroid-photo">
+                            <img src="assets/images/local-1.jpg" alt="Fachada e interior de Ultra Tech en la noche">
+                        </div>
+                        <figcaption>Nuestro local</figcaption>
+                    </figure>
+
+                    <figure class="polaroid" data-reveal data-reveal-fade>
+                        <div class="polaroid-photo">
+                            <img src="assets/images/local-2.jpg" alt="Productos de Ultra Tech">
+                        </div>
+                        <figcaption>Nuestros productos</figcaption>
+                    </figure>
+
+                    <figure class="polaroid" data-reveal data-reveal-fade>
+                        <div class="polaroid-photo">
+                            <img src="assets/images/local-3.jpg" alt="Servicio técnico Ultra Tech">
+                        </div>
+                        <figcaption>El servicio técnico</figcaption>
+                    </figure>
+
+                </div>
+
+                <p class="gallery-follow">
+                    Síguenos en
+                    <a href="https://www.instagram.com/ultra_tech_co/" target="_blank">@ultra_tech_co</a>
+                    para ver más.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section id="contacto" class="contact section">
+
+            <div class="container contact-content">
+
+                <div class="contact-intro">
+
+                    <h2>Estamos para ayudarte.</h2>
+
+                    <p>Encuéntranos en El Carmen, Sibaté, Cundinamarca, o escríbenos si prefieres resolverlo sin salir de casa.</p>
+
+                    <a
+                        href="https://wa.me/573223034108?text=Hola%20Ultra%20Tech%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n."
+                        target="_blank"
+                        class="btn btn-primary"
+                    >
+                        <svg width="18" height="18"><use href="#icon-whatsapp"/></svg>
+                        Hablar por WhatsApp
+                    </a>
+
+                </div>
+
+
+                <div class="slip" data-reveal>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=4.4895985,-74.2611935&hl=es&z=17&output=embed"
+                            width="100%"
+                            height="220"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="slip-line"></div>
+
+                    <div class="slip-row">
+                        <svg width="18" height="18"><use href="#icon-pin"/></svg>
+                        <div>
+                            <strong>Carrera 8 # 7 - 36</strong>
+                            <span>El Carmen, Sibaté, Cundinamarca</span>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ultra+Tech+Sibate&query_place_id=ChIJ3VLH804LP44R-YMJpY5_DUA" target="_blank" class="slip-link">Cómo llegar</a>
+                    </div>
+
+                    <div class="slip-row">
+                        <svg width="18" height="18"><use href="#icon-clock"/></svg>
+                        <div>
+                            <strong>Lunes a sábado</strong>
+                            <span>10:00 AM – 9:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="slip-row">
+                        <svg width="18" height="18"><use href="#icon-clock"/></svg>
+                        <div>
+                            <strong>Domingos y festivos</strong>
+                            <span>10:00 AM – 6:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="slip-row">
+                        <a href="tel:+573223034108" class="slip-phone">📞 322 303 4108</a>
+                    </div>
+
+                    <div class="ticket-barcode"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Ultra Tech">
+                <div>
+                    <h3>Ultra Tech</h3>
+                    <p>Tecnología · Servicio · Confianza</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://www.instagram.com/ultra_tech_co/" target="_blank" aria-label="Instagram">
+                    <svg width="18" height="18"><use href="#icon-instagram"/></svg>
+                </a>
+                <a href="https://wa.me/573223034108" target="_blank" aria-label="WhatsApp">
+                    <svg width="18" height="18"><use href="#icon-whatsapp"/></svg>
+                </a>
+            </div>
+
+            <p class="footer-copy">© 2026 Ultra Tech. Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a
+        href="https://wa.me/573223034108?text=Hola%20Ultra%20Tech%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20informaci%C3%B3n."
+        target="_blank"
+        class="whatsapp-float"
+        aria-label="Escribir por WhatsApp"
+    >
+        <svg width="26" height="26"><use href="#icon-whatsapp"/></svg>
+    </a>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
